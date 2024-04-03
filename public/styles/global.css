@@ -22,19 +22,18 @@ body {
   background: var(--background);
   color: var(--primary);
   max-width: 1280px;
-  padding: 2rem 0;
-  margin: 0 1rem;
+  padding: 2rem 1rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   row-gap: 6rem;
+  max-width: 1280px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1400px) {
   body {
-    margin: 0 auto;
     padding: 5rem 0;
     row-gap: 11.5rem;
-    max-width: 1280px;
   }
 }
 
