@@ -6,10 +6,17 @@
 .hero .hero__details {
   flex-grow: 1;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 130px;
-  margin-left: -40px;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+  .hero .hero__details {
+    margin-bottom: 130px;
+    margin-left: -40px;
+    align-items: center;
+  }
 }
 
 .hero .hero__details__wrapper {
@@ -28,13 +35,27 @@
 }
 
 .hero .hero__header {
-  font-size: 16rem;
-  line-height: 11.5rem;
+  font-size: 5rem;
+  line-height: 8rem;
   font-weight: 600;
   position: absolute;
   bottom: 0;
   left: 0;
   transition: transform 500ms;
+}
+
+@media (min-width: 768px) {
+  .hero .hero__header {
+    font-size: 10rem;
+    line-height: 7.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero .hero__header {
+    font-size: 14rem;
+    line-height: 10rem;
+  }
 }
 
 .hero--not-in-view .hero__header {
@@ -44,10 +65,27 @@
 .hero .hero__image_container {
   position: relative;
   z-index: -1;
+  width: 50%;
+  height: 400px;
+}
+
+@media (min-width: 768px) {
+  .hero .hero__image_container {
+    width: 55%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero .hero__image_container {
+    width: auto;
+    height: auto;
+  }
 }
 
 .hero .hero__image_container .hero__image_mask {
   opacity: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .hero .hero__image_container .hero__image {
@@ -56,6 +94,9 @@
   left: 0;
   opacity: 1;
   transition: transform 500ms;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .hero--not-in-view .hero__image {
