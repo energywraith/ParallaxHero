@@ -1,2 +1,2 @@
-import './heroObserver'
-import './buttonAnimation'
+import './heroObserver.js'
+import './buttonAnimation.js'
