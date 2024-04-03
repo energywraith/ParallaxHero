@@ -1,0 +1,17 @@
+{
+  "name": "parallax-hero",
+  "version": "1.0.0",
+  "description": "Hero with parallax, hover effects",
+  "main": "index.js",
+  "author": "Adam Jałocha <energywraith@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "ts": "tsc -w",
+    "serve": "cd public && web-dev-server --node-resolve --watch --open --app-index index.html",
+    "dev": "yarn ts & yarn serve"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.3",
+    "typescript": "^5.4.3"
+  }
+}
