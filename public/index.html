@@ -12,17 +12,32 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/hero.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
   </head>
   <body>
-    <header>
-      <section>
-        <p>We are Panowie Pro. A software studio for creatives.</p>
-        <button>Work with us</button>
+    <header class="hero">
+      <h1 id="header" class="hero__header">Panowie</h1>
+      <section class="hero__details">
+        <div class="hero__details__wrapper">
+          <p>We are Panowie Pro.<br />A software studio for creatives.</p>
+          <button>Work with us</button>
+        </div>
       </section>
-      <h1>Panowie</h1>
-      <img src="/assets/hero-image.jpg" alt="Desert with a blue sky" />
+      <section class="hero__image_container">
+        <img
+          src="/assets/hero-image.jpg"
+          alt="Desert with a blue sky"
+          class="hero__image_mask"
+        />
+        <img
+          src="/assets/hero-image.jpg"
+          alt="Desert with a blue sky"
+          class="hero__image"
+        />
+      </section>
     </header>
-    <main></main>
+    <main class="main"></main>
     <script src="/js/app.js" type="module" async defer></script>
   </body>
 </html>

@@ -1,3 +1,11 @@
+:root {
+  --primary: #393939;
+  --secondary: #fff;
+  --placeholder: #d9d9d9;
+  --accentGradient: linear-gradient(90deg, #b06642 0%, #f4b17e 100%);
+  --background: #fff;
+}
+
 *,
 *::before,
 *::after {
@@ -9,9 +17,17 @@
 }
 
 body {
-  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: 'Inter';
+  background: var(--background);
+  color: var(--primary);
+
+  padding: 5rem 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 11.5rem;
 }
 
 img,
