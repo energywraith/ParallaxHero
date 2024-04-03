@@ -1,1 +1,2 @@
 import './heroObserver'
+import './buttonAnimation'
