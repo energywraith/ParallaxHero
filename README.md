@@ -4,7 +4,7 @@ This repository contains a landing page with a simple Hero.
 
 ## Deployment
 
-This application is deployed on Vercel. You can access the live deployment [here](https://basket-cart.vercel.app/).
+This application is deployed on Vercel. You can access the live deployment [here](https://parallax-hero.vercel.app).
 
 ## Getting Started
 
