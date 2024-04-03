@@ -6,6 +6,7 @@
   "author": "Adam Jałocha <energywraith@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
     "ts": "tsc -w",
     "serve": "cd public && web-dev-server --node-resolve --watch --open --app-index index.html",
     "dev": "yarn ts & yarn serve",
